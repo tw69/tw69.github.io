@@ -35,3 +35,18 @@ text-rendering: optimizeLegibility;
        url(https://tw69.github.io/fonts/zg/Zawgyi-One.woff) format('woff'),
        url(https://tw69.github.io/fonts/zg/Zawgyi-One.ttf) format('truetype');
 }
+
+/* Webfont: Noto Sans Zawgyi */
+@font-face {
+  font-family:'Noto Sans Zawgyi';
+  src: local('Noto Sans Zawgyi'),
+       url(https://tw69.github.io/fonts/nszg/NotoSansZawgyi-Regular.woff) format('woff'),
+       url(https://tw69.github.io/fonts/nszg/NotoSansZawgyi-Regular.ttf) format('ttf');
+}
+@font-face {
+  font-family:'Noto Sans Zawgyi';
+  font-weight:bold;
+  src:local('Noto Sans Zawgyi'),
+       url(https://tw69.github.io/fonts/nszg/NotoSansZawgyi-Bold.woff') format('woff'),
+       url(https://tw69.github.io/fonts/nszg/NotoSansZawgyi-Bold.ttf') format('ttf');
+}
