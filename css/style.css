@@ -1,0 +1,37 @@
+/* Webfont: Pyidaungsu */
+@font-face {
+font-family: 'Pyidaungsu';
+src: url('//tw69.github.io/fonts/pds/Pyidaungsu.eot'); /* IE9 Compat Modes */
+src: url('//tw69.github.io/fonts/pds/Pyidaungsu.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('//tw69.github.io/fonts/pds/Pyidaungsu.woff') format('woff'), /* Modern Browsers */
+     url('//tw69.github.io/fonts/pds/Pyidaungsu.ttf') format('truetype'), /* Safari, Android, iOS */
+     url('//tw69.github.io/fonts/pds/Pyidaungsu.svg#Pyidaungsu') format('svg'); /* Legacy iOS */
+font-style: normal;
+font-weight: normal;
+text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Myanmar3 */
+@font-face {
+font-family: 'Myanmar3';
+src: url('//tw69.github.io/fonts/mm3/Myanmar31.eot'); /* IE9 Compat Modes */
+src: url('//tw69.github.io/fonts/mm3/Myanmar31.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('//tw69.github.io/fonts/mm3/Myanmar31.woff') format('woff'), /* Modern Browsers */
+     url('//tw69.github.io/fonts/mm3/Myanmar31.ttf') format('truetype'), /* Safari, Android, iOS */
+     url('//tw69.github.io/fonts/mm3/Myanmar31.svg#Myanmar3') format('svg'); /* Legacy iOS */
+font-style: normal;
+font-weight: normal;
+text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Zawgyi-One */
+@font-face {
+  font-family: 'Zawgyi-One';
+  font-style: normal;
+  font-weight: normal;
+  src: url(//tw69.github.io/fonts/zg/Zawgyi-One.eot);
+  src: url(//tw69.github.io/fonts/zg/Zawgyi-One.eot?#iefix) format('embedded-opentype'),
+       url(//tw69.github.io/fonts/zg/Zawgyi-One.woff2) format('woff2'),
+       url(//tw69.github.io/fonts/zg/Zawgyi-One.woff) format('woff'),
+       url(//tw69.github.io/fonts/zg/Zawgyi-One.ttf) format('truetype');
+}

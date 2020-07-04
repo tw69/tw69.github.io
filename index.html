@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<meta content="en-us" http-equiv="Content-Language"/>
+<title>mTw - MM Web Font</title>
+<link href='https://fonts.googleapis.com/css?family=Dosis|Rajdhani' rel='stylesheet' type='text/css'>
+<link href="//fonts.googleapis.com/earlyaccess/myanmarsanspro.css" rel="stylesheet" type='text/css'>
+<style type="text/css">
+@font-face {
+font-family: 'Pyidaungsu';
+src: url('./fonts/pds/Pyidaungsu.eot'); /* IE9 Compat Modes */
+src: url('./fonts/pds/Pyidaungsu.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('./fonts/pds/Pyidaungsu.woff') format('woff'), /* Modern Browsers */
+     url('./fonts/pds/Pyidaungsu.ttf') format('truetype'), /* Safari, Android, iOS */
+     url('./fonts/pds/Pyidaungsu.svg#Pyidaungsu') format('svg'); /* Legacy iOS */
+font-style: normal;
+font-weight: normal;
+text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'Myanmar3';
+src: url('./fonts/mm3/Myanmar31.eot'); /* IE9 Compat Modes */
+src: url('./fonts/mm3/Myanmar31.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('./fonts/mm3/Myanmar31.woff') format('woff'), /* Modern Browsers */
+     url('./fonts/mm3/Myanmar31.ttf') format('truetype'), /* Safari, Android, iOS */
+     url('./fonts/mm3/Myanmar31.svg#Myanmar3') format('svg'); /* Legacy iOS */
+font-style: normal;
+font-weight: normal;
+text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Zawgyi-One';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./fonts/zg/Zawgyi-One.eot);
+  src: url(./fonts/zg/Zawgyi-One.eot?#iefix) format('embedded-opentype'),
+       url(./fonts/zg/Zawgyi-One.woff2) format('woff2'),
+       url(./fonts/zg/Zawgyi-One.woff) format('woff'),
+       url(./fonts/zg/Zawgyi-One.ttf) format('truetype');
+}
+#pds{
+	font-family: 'Pyidaungsu';
+	font-size: 1em;
+	font-weight: 600;
+	padding-left: 5px;
+}
+#mm3{
+	font-family: 'Myanmar3';
+	font-size: 1em;
+	padding-left: 5px;
+}
+#zg{
+	font-family: 'Zawgyi-One';
+	font-size: .9em;
+	padding-left: 5px;
+}
+body{ 
+  font-family: 'Dosis'; 
+  font-size: 1.3em;
+  line-height: 1.6em;
+}
+
+.headline{
+  font-size: 2em;
+  text-align: center;
+}
+
+#wrapper {
+  max-width: 800px;
+  width: 100%;
+  background: #FFF;
+  padding: 1em;
+  margin: 1em auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  border-radius: 3px;
+}
+
+button {
+  border: none;
+  padding: 0.8em;
+  background: #0615F7;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  margin: 0 0 1em;
+}
+
+#refresh {
+  border: none;
+  padding: 0.8em;
+  background: #222222;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  margin: 0 0 1em;
+}
+
+button:hover, button:focus {
+  cursor: pointer;
+  outline: none;
+}
+
+#editor {
+  padding: 1em;
+  background: #E6E6E6;
+  border-radius: 3px;
+}
+
+#editor:focus {
+  background: #FFF;
+  border-color: #69c773;
+}
+
+[contenteditable="true"] {
+  font-family: 'ajdhani';
+  color: #C00;
+}
+</style>
+</head>
+<div id="wrapper">
+  <section>
+    <h1 class="headline">MM Web Fonts</h1>
+    <div id="editDocument">
+      <p><strong>Pyidaungsu : </strong><span id="pds">The quick brown fox jumps over the lazy dog. $123.45!</span>
+      </p>
+      <p><strong>Myanmar3 : </strong><span id="mm3">The quick brown fox jumps over the lazy dog. $123.45!</span>
+      </p>
+      <p><strong>Zawgyi-One : </strong><span id="zg">The quick brown fox jumps over the lazy dog. $123.45!</span>
+      </p>
+    </div>
+    <button id="editBtn" type="button">Edit Text</button>
+  </section>
+  <section>
+    <center><button id="refresh" onclick=location=''>Refresh</button></center>
+  </section>
+</div>
+<script type="text/javascript">
+var editBtn = document.getElementById('editBtn');
+var editables = document.querySelectorAll('#pds, #mm3, #zg');
+
+if (typeof(Storage) !== "undefined") {
+  if (localStorage.getItem('pds') !== null) {
+    editables[0].innerHTML = localStorage.getItem('pds');
+  }
+  if (localStorage.getItem('mm3') !== null) {
+    editables[1].innerHTML = localStorage.getItem('mm3');
+  }
+  if (localStorage.getItem('zg') !== null) {
+    editables[2].innerHTML = localStorage.getItem('zg');
+  }
+}
+
+editBtn.addEventListener('click', function(e) {
+  if (!editables[0].isContentEditable) {
+    editables[0].contentEditable = 'true';
+    editables[1].contentEditable = 'true';
+    editables[2].contentEditable = 'true';
+    editBtn.innerHTML = 'Save Changes';
+    editBtn.style.backgroundColor = '#6F9';
+  } else {
+    // Disable Editing
+    editables[0].contentEditable = 'false';
+    editables[1].contentEditable = 'false';
+    editables[2].contentEditable = 'false';
+    // Change Button Text and Color
+    editBtn.innerHTML = 'Edit Text';
+    editBtn.style.backgroundColor = '#0615F7';
+  }
+});
+</script>
