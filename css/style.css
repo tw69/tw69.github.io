@@ -24,16 +24,28 @@ font-weight: normal;
 text-rendering: optimizeLegibility;
 }
 
+/* Webfont: Myanmar Sans Pro */
+@font-face {
+  font-family: 'Myanmar Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://tw69.github.io/fonts/msp/MyanmarSansPro-Regular.eot');
+  src: url('https://tw69.github.io/fonts/msp/MyanmarSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('https://tw69.github.io/fonts/msp/MyanmarSansPro-Regular.woff2') format('woff2'),
+       url('https://tw69.github.io/fonts/msp/MyanmarSansPro-Regular.woff') format('woff'),
+       url('https://tw69.github.io/fonts/msp/MyanmarSansPro-Regular.ttf') format('truetype');
+}
+
 /* Webfont: Zawgyi-One */
 @font-face {
   font-family: 'Zawgyi-One';
   font-style: normal;
   font-weight: normal;
-  src: url(https://tw69.github.io/fonts/zg/Zawgyi-One.eot);
-  src: url(https://tw69.github.io/fonts/zg/Zawgyi-One.eot?#iefix) format('embedded-opentype'),
-       url(https://tw69.github.io/fonts/zg/Zawgyi-One.woff2) format('woff2'),
-       url(https://tw69.github.io/fonts/zg/Zawgyi-One.woff) format('woff'),
-       url(https://tw69.github.io/fonts/zg/Zawgyi-One.ttf) format('truetype');
+  src: url('https://tw69.github.io/fonts/zg/Zawgyi-One.eot');
+  src: url('https://tw69.github.io/fonts/zg/Zawgyi-One.eot?#iefix') format('embedded-opentype'),
+       url('https://tw69.github.io/fonts/zg/Zawgyi-One.woff2') format('woff2'),
+       url('https://tw69.github.io/fonts/zg/Zawgyi-One.woff') format('woff'),
+       url('https://tw69.github.io/fonts/zg/Zawgyi-One.ttf') format('truetype');
 }
 
 /* Webfont: Noto Sans Zawgyi */
