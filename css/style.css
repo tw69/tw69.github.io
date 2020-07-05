@@ -1,11 +1,11 @@
 /* Webfont: Pyidaungsu */
 @font-face {
 font-family: 'Pyidaungsu';
-src: url('https://tw69.github.io/fonts/pds/Pyidaungsu.eot'); /* IE9 Compat Modes */
-src: url('https://tw69.github.io/fonts/pds/Pyidaungsu.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-     url('https://tw69.github.io/fonts/pds/Pyidaungsu.woff') format('woff'), /* Modern Browsers */
-     url('https://tw69.github.io/fonts/pds/Pyidaungsu.ttf') format('truetype'), /* Safari, Android, iOS */
-     url('https://tw69.github.io/fonts/pds/Pyidaungsu.svg#Pyidaungsu') format('svg'); /* Legacy iOS */
+src: url('https://than.win/fonts/pds/Pyidaungsu.eot'); /* IE9 Compat Modes */
+src: url('https://than.win/fonts/pds/Pyidaungsu.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('https://than.win/fonts/pds/Pyidaungsu.woff') format('woff'), /* Modern Browsers */
+     url('https://than.win/fonts/pds/Pyidaungsu.ttf') format('truetype'), /* Safari, Android, iOS */
+     url('https://than.win/fonts/pds/Pyidaungsu.svg#Pyidaungsu') format('svg'); /* Legacy iOS */
 font-style: normal;
 font-weight: normal;
 text-rendering: optimizeLegibility;
@@ -14,11 +14,11 @@ text-rendering: optimizeLegibility;
 /* Webfont: Myanmar3 */
 @font-face {
 font-family: 'Myanmar3';
-src: url('https://tw69.github.io/fonts/mm3/Myanmar31.eot'); /* IE9 Compat Modes */
-src: url('https://tw69.github.io/fonts/mm3/Myanmar31.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-     url('https://tw69.github.io/fonts/mm3/Myanmar31.woff') format('woff'), /* Modern Browsers */
-     url('https://tw69.github.io/fonts/mm3/Myanmar31.ttf') format('truetype'), /* Safari, Android, iOS */
-     url('https://tw69.github.io/fonts/mm3/Myanmar31.svg#Myanmar3') format('svg'); /* Legacy iOS */
+src: url('https://than.win/fonts/mm3/Myanmar31.eot'); /* IE9 Compat Modes */
+src: url('https://than.win/fonts/mm3/Myanmar31.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('https://than.win/fonts/mm3/Myanmar31.woff') format('woff'), /* Modern Browsers */
+     url('https://than.win/fonts/mm3/Myanmar31.ttf') format('truetype'), /* Safari, Android, iOS */
+     url('https://than.win/fonts/mm3/Myanmar31.svg#Myanmar3') format('svg'); /* Legacy iOS */
 font-style: normal;
 font-weight: normal;
 text-rendering: optimizeLegibility;
@@ -29,11 +29,11 @@ text-rendering: optimizeLegibility;
   font-family: 'Myanmar Sans Pro';
   font-style: normal;
   font-weight: 400;
-  src: url('https://tw69.github.io/fonts/msp/MyanmarSansPro-Regular.eot');
-  src: url('https://tw69.github.io/fonts/msp/MyanmarSansPro-Regular.eot?#iefix') format('embedded-opentype'),
-       url('https://tw69.github.io/fonts/msp/MyanmarSansPro-Regular.woff2') format('woff2'),
-       url('https://tw69.github.io/fonts/msp/MyanmarSansPro-Regular.woff') format('woff'),
-       url('https://tw69.github.io/fonts/msp/MyanmarSansPro-Regular.ttf') format('truetype');
+  src: url('https://than.win/fonts/msp/MyanmarSansPro-Regular.eot');
+  src: url('https://than.win/fonts/msp/MyanmarSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('https://than.win/fonts/msp/MyanmarSansPro-Regular.woff2') format('woff2'),
+       url('https://than.win/fonts/msp/MyanmarSansPro-Regular.woff') format('woff'),
+       url('https://than.win/fonts/msp/MyanmarSansPro-Regular.ttf') format('truetype');
 }
 
 /* Webfont: Zawgyi-One */
@@ -41,24 +41,24 @@ text-rendering: optimizeLegibility;
   font-family: 'Zawgyi-One';
   font-style: normal;
   font-weight: normal;
-  src: url('https://tw69.github.io/fonts/zg/Zawgyi-One.eot');
-  src: url('https://tw69.github.io/fonts/zg/Zawgyi-One.eot?#iefix') format('embedded-opentype'),
-       url('https://tw69.github.io/fonts/zg/Zawgyi-One.woff2') format('woff2'),
-       url('https://tw69.github.io/fonts/zg/Zawgyi-One.woff') format('woff'),
-       url('https://tw69.github.io/fonts/zg/Zawgyi-One.ttf') format('truetype');
+  src: url('https://than.win/fonts/zg/Zawgyi-One.eot');
+  src: url('https://than.win/fonts/zg/Zawgyi-One.eot?#iefix') format('embedded-opentype'),
+       url('https://than.win/fonts/zg/Zawgyi-One.woff2') format('woff2'),
+       url('https://than.win/fonts/zg/Zawgyi-One.woff') format('woff'),
+       url('https://than.win/fonts/zg/Zawgyi-One.ttf') format('truetype');
 }
 
 /* Webfont: Noto Sans Zawgyi */
 @font-face {
   font-family:'Noto Sans Zawgyi';
   src: local('Noto Sans Zawgyi'),
-       url(https://tw69.github.io/fonts/nszg/NotoSansZawgyi-Regular.woff) format('woff'),
-       url(https://tw69.github.io/fonts/nszg/NotoSansZawgyi-Regular.ttf) format('ttf');
+       url(https://than.win/fonts/nszg/NotoSansZawgyi-Regular.woff) format('woff'),
+       url(https://than.win/fonts/nszg/NotoSansZawgyi-Regular.ttf) format('ttf');
 }
 @font-face {
   font-family:'Noto Sans Zawgyi';
   font-weight:bold;
   src:local('Noto Sans Zawgyi'),
-       url(https://tw69.github.io/fonts/nszg/NotoSansZawgyi-Bold.woff') format('woff'),
-       url(https://tw69.github.io/fonts/nszg/NotoSansZawgyi-Bold.ttf') format('ttf');
+       url(https://than.win/fonts/nszg/NotoSansZawgyi-Bold.woff') format('woff'),
+       url(https://than.win/fonts/nszg/NotoSansZawgyi-Bold.ttf') format('ttf');
 }
